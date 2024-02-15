@@ -5,7 +5,7 @@
   top: 0;
   left: 0;
   background-size: cover; /* Imposta la dimensione dell'immagine di sfondo su "cover" */
-  background-image: url("../img/sfondo5.jpeg");
+  background-image: url("../img/sfondo.jpeg");
   background-repeat: no-repeat; /* Impedisce la ripetizione dell'immagine di sfondo */
   background-position: center; /* Imposta la posizione del background al centro */
   z-index: 0;
@@ -69,4 +69,35 @@ footer {
   position: absolute;
   bottom: 0;
   background-color: transparent;
+}
+
+@media only screen and (max-width: 500px) {
+  .btn-piu-meno {
+    padding: 10px 25px !important;
+    font-size: 0.5em !important;
+  }
+  .btn-reset {
+    height: 50px !important;
+    font-size: 0.5em !important;
+  }
+  footer h5 {
+    font-size: 0.7em;
+  }
+}
+@media only screen and (max-width: 1000px) and (orientation: landscape) {
+  .counter-titolo {
+    font-size: 2.5em;
+  }
+  .btn-piu-meno {
+    padding: 10px 25px !important;
+    font-size: 0.7em !important;
+  }
+  .btn-reset {
+    width: 20%;
+    height: 50px !important;
+    font-size: 0.5em !important;
+  }
+  footer h5 {
+    font-size: 0.7em;
+  }
 }/*# sourceMappingURL=main.css.map */
