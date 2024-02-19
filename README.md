@@ -1,12 +1,15 @@
 # Counter
-Benvenuti nel mio progetto di counter interattivo! Sono Daniel, uno studente di informatica al secondo anno, e ho sviluppato questo semplice ma utile sito web utilizzando HTML, Sass, JavaScript e Bootstrap.
+Benvenuti nel mio progetto di counter interattivo! Sono Daniel, uno studente di informatica all'università di Pisa, e ho sviluppato questo semplice ma utile sito web utilizzando HTML, Sass, JavaScript e Bootstrap.
 
 ## Descrizione
 
 Il sito presenta un contatore iniziale impostato su zero e offre tre pulsanti chiave:
 - **+** : Incrementa il contatore di uno.
-- **-** : Decrementa il contatore di uno (con una restrizione che impedisce di scendere al di sotto di zero).
+- **-** : Decrementa il contatore di uno.
 - **Reset**: Riporta il contatore a zero.
+- **I numeri positivi** appariranno di colore **verde**.
+- **I numeri negativi** appariranno di colore **rosso**.
+- **Lo zero** apparirà di colore **bianco**.
 
 ## Tecnologie Utilizzate
 
