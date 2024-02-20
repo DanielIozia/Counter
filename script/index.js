@@ -1,13 +1,11 @@
 let count = 0;
 const counterElement = document.getElementById('counter');
 
-const updateCounter =()=> {
+const updateCounter = () => {
   counterElement.textContent = count;
 }
 
-const incrementa = () => {
-  count++;
-
+const updateColor = () => {
   if (count < 0) {
     counterElement.style.color = 'red';
   } else if (count == 0) {
@@ -15,27 +13,23 @@ const incrementa = () => {
   } else {
     counterElement.style.color = 'green';
   }
+}
 
+const incrementa = () => {
+  count++;
+  updateColor();
   updateCounter();
 };
 
 const decrementa = () => {
   count--;
-
-  if (count > 0) {
-    counterElement.style.color = 'green';
-  } else if (count == 0) {
-    counterElement.style.color = 'white';
-  } else {
-    counterElement.style.color = 'red';
-  }
-
+  updateColor();
   updateCounter();
 };
 
 const reset=()=> {
     count = 0;
-    counterElement.style.color = 'white';
+    updateColor();
     updateCounter();
 }
 
