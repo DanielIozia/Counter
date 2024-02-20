@@ -5,41 +5,33 @@ const updateCounter =()=> {
   counterElement.textContent = count;
 }
 
-const incrementa=()=> {
-
-  if(count < 0) {
-    counterElement.style.color = 'red';
-  }
-
-  if(count == -1){
-    counterElement.style.color = 'white';
-  }
-
-  if(count >= 0) {
-    counterElement.style.color = 'green';
-  }
-  
+const incrementa = () => {
   count++;
-  updateCounter();
-}
 
-const decrementa=()=> {
-
-  if(count > 0) {
+  if (count < 0) {
+    counterElement.style.color = 'red';
+  } else if (count == 0) {
+    counterElement.style.color = 'white';
+  } else {
     counterElement.style.color = 'green';
   }
 
-  if(count == 1){
-    counterElement.style.color = 'white';
-  }
+  updateCounter();
+};
 
-  if(count <= 0) {
+const decrementa = () => {
+  count--;
+
+  if (count > 0) {
+    counterElement.style.color = 'green';
+  } else if (count == 0) {
+    counterElement.style.color = 'white';
+  } else {
     counterElement.style.color = 'red';
   }
-  count--;
-  
+
   updateCounter();
-}
+};
 
 const reset=()=> {
     count = 0;
