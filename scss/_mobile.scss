@@ -1,6 +1,10 @@
 //main: main.scss
 @media only screen and (max-width: 500px){
 
+    .img-bg{
+        height:120vh;
+    }
+
     .btn-piu-meno{
         padding: 10px 25px !important;
         font-size: 0.5em !important;
@@ -11,7 +15,6 @@
         font-size: 0.5em !important;
     }
     
-
     footer{
         h5{           
             font-size: 0.7em;
@@ -43,3 +46,4 @@
         }
     }
 }
+
